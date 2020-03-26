@@ -18,13 +18,16 @@ namespace uchase
             //Console.OutputEncoding = Encoding.UTF8;
 
             var chromeOptions = new ChromeOptions(); //comment this for GUI browser
-            chromeOptions.AddArguments("headless"); //comment this for GUI browser
+            chromeOptions.AddArguments("headless"); //comment this for GUI browser 
             IWebDriver driver = new ChromeDriver(chromeOptions);
+            //IWebDriver driver = new ChromeDriver();
 
 
             driver.Navigate().GoToUrl("https://ucha.se/");
 
-            Thread.Sleep(2000); //2 seconds
+            //Thread.Sleep(2000); //2 seconds
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+
 
             try
             {
@@ -37,7 +40,9 @@ namespace uchase
                 var passwordBox = driver.FindElement(By.Name("password"));
                 
                 Console.BackgroundColor = ConsoleColor.Green;
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
+                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+
                 Console.WriteLine("[+] Email: ");
                 var email = Console.ReadLine();
 
@@ -49,16 +54,22 @@ namespace uchase
                 Console.ResetColor();
 
                 usernameBox.SendKeys(email); //mail
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
+                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+
                 passwordBox.SendKeys(password); //password
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
+                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+
 
                 var loginButton =
                     driver.FindElement(By.Id("send_data"));
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
+                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
                 loginButton.Click();
-                Thread.Sleep(3000);
+                //Thread.Sleep(3000);
+                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
 
                 driver.Navigate().GoToUrl(urlCourse);
@@ -102,7 +113,9 @@ namespace uchase
             //read m3u8, get sources
 
             driver.Navigate().GoToUrl(url);
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+
             var pageSource = driver.PageSource;
 
             var m3u8Pattern =
@@ -117,7 +130,9 @@ namespace uchase
 
                 var sessionKey = m3U8Files[0].Groups[2].Value;
 
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
+                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+
 
                 try
                 {
