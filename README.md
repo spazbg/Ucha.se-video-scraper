@@ -1,4 +1,4 @@
-# uchase
+# UCHA.SE VIDEO DOWNLOADER
 A small batch of spaghetti code with the help of which you can generate text input for FFmpeg and download a video course from https://ucha.se/. The service uses encrypted HLS also know as HTTP Live Streaming.
 
 The compiled .exe expect as input your email and password from your account and the course URL to be scraped e.g. https://ucha.se/videos/angliyski-ezik/nivo-b2/ 
