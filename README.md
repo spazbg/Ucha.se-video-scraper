@@ -27,3 +27,6 @@ In the end, you will get all the files from the course.
 <img src="https://i.imgur.com/DyyxaJy.png">
 
 PS. If you use the script to download more then one video course either delete the download.txt files when the first download process end or use the lastest one-liner in the download.txt file. Every one-liner is separate by the previous with a row of "===========". 
+
+If you don't want to compile the project on your own, you can download the archive, unzip it and run the uchase.exe file.
+https://github.com/spazbg/uchase/releases/download/v0.1a/Debug.zip
