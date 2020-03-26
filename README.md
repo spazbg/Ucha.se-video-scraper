@@ -17,7 +17,7 @@ When the script is ready with his magic, he generates a download.txt file at his
 
 <img src="https://i.imgur.com/6Zv3o9f.png">
 
-The download.txt file contains a one-line command for ffmpeg.exe, which will download all the videos from a given course with proper numbering and names. Just copy/paste all the text (without the "====" lien separator at the end of the file) to ffmpeg.exe and you are done. 
+The download.txt file contains a one-line command for ffmpeg.exe, which will download all the videos from a given course with proper numbering and names. Just copy/paste all the text (without the "====" linе separator at the end of the file) to ffmpeg.exe and you are done. 
 
 <img src="https://i.imgur.com/ib4S31b.png">
 
