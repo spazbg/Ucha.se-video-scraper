@@ -3,7 +3,7 @@ A small batch of spaghetti code with the help of which you can generate text inp
 
 This web scraping script uses C#. Mad props for Selenium Webdriver, RegEx and the whole of Italy for the pasta. 
 
-The compiled .exe expect as input your email and password from your account and the course URL to be scraped e.g. https://ucha.se/videos/angliyski-ezik/nivo-b2/ 
+The compiled .exe expect as input your email and password for your account and the course URL to be scraped e.g. https://ucha.se/videos/angliyski-ezik/nivo-b2/ 
 
 (This is the URL with all videos from a given course)
 
